@@ -58,4 +58,4 @@ def index(path):
     except NoNodeError:
         abort(404, "No such node.")
 
-run(port=8080)
+run(server='gunicorn', host='0.0.0.0', port=8080)
