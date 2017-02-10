@@ -58,4 +58,4 @@ def index(path):
     except NoNodeError:
         abort(404, "No such node.")
 
-run(host='localhost', port=8080)
+run(port=8080)
