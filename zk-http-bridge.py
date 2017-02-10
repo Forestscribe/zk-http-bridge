@@ -41,7 +41,7 @@ index_tpl = SimpleTemplate("""
 """)
 
 
-@route('/<path:path>')
+@route('<path:path>')
 def index(path):
     zk, path = ZK(DEFAULT_HOSTS, path)
     try:
